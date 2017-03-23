@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CALCULADORA LABORATORIA</title>
+  </head>
+  <body>
+    <html>
+<body bgcolor= "FFFFFF" text= "black" align=center>
+  <h1>Calculadora</h1>
+      Operaciones
+  <br>
+  <form name="calculator" >
+    <input type="textfield" name="ans" value="" align="middle">
+      <table align=center border="1px">
+         <tr>
+            <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+            <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+            <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+            <td><input type="button" value="+" onClick="document.calculator.ans.value+='+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onClick="document.calculator.ans.value+='4'"></td>
+            <td><input type="button" value="5" onClick="document.calculator.ans.value+='5'"></td>
+            <td><input type="button" value="6" onClick="document.calculator.ans.value+='6'"></td>
+            <td><input type="button" value="-" onClick="document.calculator.ans.value+='-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onClick="document.calculator.ans.value+='7'"></td>
+            <td><input type="button" value="8" onClick="document.calculator.ans.value+='8'"></td>
+            <td><input type="button" value="9" onClick="document.calculator.ans.value+='9'"></td>
+            <td><input type="button" value="*" onClick="document.calculator.ans.value+='*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onClick="document.calculator.ans.value+='.'"></td>
+            <td><input type="button" value="0" onClick="document.calculator.ans.value+='0'"></td>
+            <td><input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></td>
+            <td><input type="button" value="/" onClick="document.calculator.ans.value+='/'"></td>
+        </tr>
+        <tr>
+           <td><input type="button"  value="%" onClick="porcent()"></td>
+           <td><input type="button" value="+/-" onClick="opuest()"></td>
+           <td><input type="button" value="√" onClick="raizc()"></td>
+         </tr>
+       </table>
+          <tr>
+          <input type="reset" value="Borrar">
+          </tr>
+     </form>
+      <script src="codigojsparacalculadora.js">
+      </script>
+    </body>
+</html>
